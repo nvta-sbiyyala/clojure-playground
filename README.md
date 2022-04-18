@@ -6,6 +6,10 @@ A Clojure and Datomic playground to get upto speed on the tech.
 Download zip from https://my.datomic.com/downloads/pro and setup datomic dependencies locally. 
 Note: The `maven-install` script in the zip file is misplaced, it should be one-level up
 
+## Learning material 
+1. https://github.com/functional-koans/clojure-koans
+2. https://github.com/ftravers/datomic-tutorial
+
 ## License
 
 Copyright © 2022 FIXME
