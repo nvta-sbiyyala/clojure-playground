@@ -1,10 +1,10 @@
 # clojure-playground
-
-A Clojure library designed to ... well, that part is up to you.
+A Clojure and Datomic playground to get upto speed on the tech. 
 
 ## Usage
-
-FIXME
+### Setup datomic
+Download zip from https://my.datomic.com/downloads/pro and setup datomic dependencies locally. 
+Note: The `maven-install` script in the zip file is misplaced, it should be one-level up
 
 ## License
 
