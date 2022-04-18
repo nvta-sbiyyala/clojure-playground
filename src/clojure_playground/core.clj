@@ -1,6 +1,8 @@
-(ns clojure-playground.core)
+(ns clojure-playground.core
+  (:gen-class))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn hello []
+  (println "Hello world!"))
+
+(defn -main []
+  (hello))
