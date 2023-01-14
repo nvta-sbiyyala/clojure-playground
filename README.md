@@ -9,7 +9,9 @@ Note: The `maven-install` script in the zip file is misplaced, it should be one-
 ## Learning material 
 1. https://cursive-ide.com/userguide/repl.html
 2. https://github.com/functional-koans/clojure-koans
-2. https://github.com/ftravers/datomic-tutorial
+3. https://github.com/ftravers/datomic-tutorial
+4. https://github.com/kristianmandrup/datascript-tutorial
+5. https://github.com/jonase/learndatalogtoday
 
 ## License
 
