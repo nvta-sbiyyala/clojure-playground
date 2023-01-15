@@ -12,6 +12,7 @@ Note: The `maven-install` script in the zip file is misplaced, it should be one-
 3. https://github.com/ftravers/datomic-tutorial
 4. https://github.com/kristianmandrup/datascript-tutorial
 5. https://github.com/jonase/learndatalogtoday
+6. https://clojure.github.io/clojure-contrib/doc/datalog.html
 
 ## License
 
