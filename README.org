@@ -1,20 +1,22 @@
-# clojure-playground
+* clojure-playground
 A Clojure and Datomic playground to get upto speed on the tech. 
 
-## Usage
-### Setup datomic
+** Usage
+*** Setup datomic
 Download zip from https://my.datomic.com/downloads/pro and setup datomic dependencies locally. 
 Note: The `maven-install` script in the zip file is misplaced, it should be one-level up
 
-## Learning material 
+** Learning material 
 1. https://cursive-ide.com/userguide/repl.html
 2. https://github.com/functional-koans/clojure-koans
 3. https://github.com/ftravers/datomic-tutorial
 4. https://github.com/kristianmandrup/datascript-tutorial
 5. https://github.com/jonase/learndatalogtoday
 6. https://clojure.github.io/clojure-contrib/doc/datalog.html
+7. https://docs.datomic.com/on-prem/overview/caching.html
+8. https://www.infoq.com/articles/Architecture-Datomic/
 
-## License
+** License
 
 Copyright © 2022 FIXME
 
