@@ -15,6 +15,7 @@ Note: The `maven-install` script in the zip file is misplaced, it should be one-
 6. https://clojure.github.io/clojure-contrib/doc/datalog.html
 7. https://docs.datomic.com/on-prem/overview/caching.html
 8. https://www.infoq.com/articles/Architecture-Datomic/
+9. https://clojureverse.org/t/a-quick-way-to-start-experimenting-with-datomic/5004
 
 ** License
 
