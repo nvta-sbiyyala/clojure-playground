@@ -79,3 +79,12 @@
 
 (map increment [10 100 132])
 (increment_set [1 2 3])
+
+(def vector ["I" "am" "a" "vector!"])
+
+(def add_on (fn [x] (str x " addon")))
+(map add_on vector)
+ 
+(into {:a 10 :e 12} [[:a 1] [:b 2] [:c 3] [:d 4]])
+
+(repeat 5 (rand-int 500))
