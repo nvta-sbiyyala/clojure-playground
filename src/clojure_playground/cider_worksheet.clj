@@ -19,8 +19,6 @@
 
 (hello)
 
-(println hello)
-
 (str 1)
 
 (def drinks ["Coke" "Fanta"])
@@ -72,4 +70,3 @@ drinks
                   ) :body)))
 
 response_body
-
