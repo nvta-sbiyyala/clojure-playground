@@ -61,14 +61,15 @@ drinks
 ;; building block-2
 ;; (def response_body (parse-string ((http_function "https://api.genderize.io/" {"name" "Sasha"}) :body)))
 
-(def response_body (parse-string ((
-                                   client/get "https://api.genderize.io/"
-                                   {:accept :json :query-params {"name" "Emily"}}
-                                   ;; respond callback
-                                   (fn [response] (response))
-                                   ;; raise callback
-                                   (fn [exception] (println "exception message is: " (.getMessage exception)))
-                                   ) :body)))
+(def response_body
+  (parse-string ((
+                  client/get "https://api.genderize.io/"
+                  {:accept :json :query-params {"name" "Emily"}}
+                  ;; respond callback
+                  (fn [response] (response))
+                  ;; raise callback
+                  (fn [exception] (println "exception message is: " (.getMessage exception)))
+                  ) :body)))
 
 response_body
 
