@@ -18,3 +18,119 @@
 (age "Goldy" 'goldfish 100)
 (age "Hydra" 'hydra 14)
 
+;; Conditionals
+(defn if_conditional
+  [input]
+  (println "\n a simple function demonstrating if conditionals in Clojure..")
+  (if (= input 5)
+    (println "Input is 5")
+    (println "Input is not 5")))
+
+(if_conditional 10)
+
+(defn if_do_conditional
+  [input]
+  (println "\n a simple function demonstrating if do conditionals in Clojure..")
+  (if (= input 5)
+    (do (println "Equal first statement")
+        (println "Equal second statement"))
+    (do (println "NOT Equal first statement")
+        (println "NOT Equal second statement"))
+    ))
+
+(if_do_conditional 5)
+
+(defn cond_nested_if
+  []
+  (println "\n nested if example")
+  (if (and (= 5 5) (or (= 2 2) (not true)))
+    (println "True")
+    (println "False")
+    ))
+
+(cond_nested_if)
+
+(defn cond_case
+  [pet]
+  (println "Cond Case")
+  (case pet
+    "cat" (println "I have a CAT")
+    "dog" (println "I have a DOG")
+     ))
+
+(cond_case "cat")
+
+(defn cond-cond
+  [amount]
+  (cond
+        (<= amount 2) (println "FEW")
+        (<= amount 10) (println "SEVERAL")
+        (<= amount 100) (println "MANY")
+        :else (println "LOADS")
+        ))
+
+(cond-cond 1)
+
+;; Loops
+(defn Loop
+  [limit]
+  (println "\nLoop:")
+  (loop [x 0]
+    (when (< x limit)
+      (println x)
+      (recur (inc x)))
+    ))
+
+(Loop 100)
+
+(defn do-times
+  [limit]
+  (println "\n" "DoTimes:")
+  (dotimes [x limit]
+    (println x))
+  )
+
+(do-times 10)
+
+;; Atoms // mutable // thread-safe
+
+(defn while-do
+  [count]
+  (println "\n" "While Do:")
+  (def x (atom 0))
+  (while (< @x count)
+    (do
+      (println @x)
+      (swap! x inc)))
+  )
+
+(while-do 10)
+
+(defn do-seq
+  [seq multiply_with]
+  (println "\n Do Seq")
+  (doseq [x seq]
+    (println (inc (* x multiply_with))))
+  )
+
+(do-seq [1 2 3 4 5 6] 101)
+
+(defn atoms
+  []
+  (def amount (atom 100))
+  (println @amount)
+
+  (swap! amount inc)
+  (println @amount)
+
+  (reset! amount 110)
+  (println @amount)
+
+  (compare-and-set! amount 110 120)
+  (println @amount)
+
+  (compare-and-set! amount 110 150)
+  (println @amount)
+
+  )
+(atoms)
