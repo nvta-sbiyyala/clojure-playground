@@ -134,3 +134,38 @@
 
   )
 (atoms)
+
+;; structMaps
+
+(defn pets
+  []
+  (defstruct pet :PetType :PetName)
+  (def my-pet (struct pet "dog" "Fido"))
+  (println my-pet)
+
+  (def my-other-pet (struct-map pet :PetName "Goofy" :PetType "Cat"))
+  (println my-other-pet)
+  (println (:PetType my-other-pet))
+
+  (def my-new-pet (assoc my-pet :PetName "MAX"))
+  (println my-new-pet)
+
+  (def my-pet-with-additional-attribute (assoc my-other-pet :PetAge 100))
+  (println my-pet-with-additional-attribute)
+  )
+
+(pets)
+
+;; Destructuring
+
+(defn destruct
+  []
+  (def my-vector [1 3 4 5])
+  (let [[a b c] my-vector] (println a b c))
+  (let [[a b & rest] my-vector] (println a b rest))
+
+  (def my-map {'name "John" 'lastname "Smith"})
+  (let [{a 'name b 'lastname c 'noname} my-map] (println a b c))
+  )
+
+(destruct)
