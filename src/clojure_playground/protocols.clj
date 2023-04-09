@@ -64,5 +64,7 @@
     (is (= "1969-12-31 19:00:00" result))))
 
 (deftest test-as-xml-user
-  (let []
-    (is (= "1969-12-31 19:00:00" result))))
+  (let [date (java.util.Date. 0)
+        user (create-user 1 "sam" date)
+        result (as-xml user)]
+    (is (= "<user><id>1</id><name>sam</name><dob>1969-12-31 19:00:00</dob></user>" result))))
